@@ -1,0 +1,21 @@
+.neobox {
+    display: center;
+    align-items: center;
+    justify-content: center;
+    border-radius: 8px;
+    background-color: yellow;
+    width: 50%;
+    padding: 2em;
+    margin: auto;
+    border: solid black;
+}
+
+.neobox:hover {
+    box-shadow: 5px 5px 0px black;
+    transition: 0.4s;
+}
+
+.neoboxRed {
+    @extend .neobox;
+    background-color: red;
+}

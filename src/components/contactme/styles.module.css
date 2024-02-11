@@ -1,0 +1,69 @@
+/* Use this: https://developer.mozilla.org/en-US/docs/Learn/Forms/Styling_web_forms#a_specific_styling_example */
+
+
+.main {
+    margin: auto; 
+}
+
+.form {
+    margin: auto;
+    /* Fixed size because I want that. */
+    width: 400px;
+    border-radius: 5px;
+}
+
+.formField {
+    /* display: flex; */
+    margin: auto;
+    margin-top: 1em;
+    margin-bottom: 1em;
+    /* This is what aligns the fields... */
+    text-align: center;
+
+}
+
+.input,
+.textarea {
+    /* Width is percentage, but because div is fixed this is okay. */
+    width: 80%;
+    padding: 1em;
+    margin: auto;
+    border-radius: 5px;
+    border: none;
+
+    /* Textarea can only be vertically changed. */
+    resize: vertical;
+
+    /* Same as footer  colors*/
+    background-color: #303846;
+    color: white;
+}
+
+/* This lets the user know they're over the button. */
+.input:hover,
+.textarea:hover {
+    box-shadow: 0px 0px 10px black;
+    transition: 0.4s;
+}
+
+.button {
+    margin: auto;
+    text-align: center;
+    border: none;
+    padding: 15px 32px;
+    border-radius: 5px;
+
+    /* Same as footer color */
+    background-color: #303846;
+    color: white;
+    font-size: medium;
+}
+
+
+/* This lets the user know they're over the button. */
+.button:hover {
+    /* Make the pointer the hand. */
+    cursor: pointer;
+    box-shadow: 0px 0px 10px black;
+    transition: 0.4s;
+}

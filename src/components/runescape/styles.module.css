@@ -1,0 +1,89 @@
+@font-face {
+  font-family: 'runescape';
+  src: url("/static/fonts/RuneScape-Plain-12.ttf") format("truetype");
+  font-weight: normal;
+  font-style: normal;
+  font-display: swap;
+}
+
+@font-face {
+  font-family: 'runescape_bold';
+  src: url("/static/fonts/RuneScape-Bold-12.ttf") format("truetype");
+  font-weight: normal;
+  font-style: bold;
+  font-display: swap;
+}
+
+@font-face {
+  font-family: "runescape_quill";
+  src: url("/static/fonts/RuneScape-Quill-8.ttf") format("truetype");
+  font-weight: normal;
+  font-style: normal;
+  font-display: swap;
+}
+
+.runescape_font {
+  font-family: "RuneScape";
+  font-size: 1.5em;
+}
+
+.runescape_font_bold {
+  font-family: "runescape_bold";
+  font-size: large;
+}
+
+.runescape_font_quill {
+  font-family: "runescape_quill";
+  font-size: large;
+}
+
+
+/* Adapted from https://codepen.io/AgnusDei/pen/NWPbOxL */
+/* This is a box for the scroll. */
+#scroll {
+  /* Shadow from 2,3 offset 20 wide, and shadow inside from 0,0 125 wide. */
+  box-shadow: 2px 3px 20px black, 0 0 125px #a15c18 inset;
+  width: 75%;
+
+  /* This enforces the background of the container white, and text black. */
+  /* This mitigates dark mode, which would otherwise make the background black. */
+  background: white;
+  color: black;
+
+  /* This keeps the scroll:after to stay just on the scroll, not
+  the whole page. */
+  filter: url(#wavy2);
+}
+
+/* Adapted from  https://codepen.io/AgnusDei/pen/NWPbOxL */
+/* This is for creating the folds in the scroll. */
+#scroll:after {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background: conic-gradient(
+    #fff3, 
+    #fff0 2% 24%, 
+    #fff2 25%, 
+    #4321 0, 
+    #0000 27% 48%, 
+    #9632 50%, 
+    #fff2 0, 
+    #fff0 52% 73%, 
+    #9632 75%, 
+    #fff3 0, 
+    #fff0 78% 97%, 
+    #9632
+  );
+}
+
+/* This is for forcing the text to be contained in the scroll. */
+#contain {
+  /* Center the text and cover 75% of the container, and 1em padding. */
+  margin: auto;
+  width: 75%;
+  padding: 1em;
+}
