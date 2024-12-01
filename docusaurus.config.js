@@ -72,7 +72,7 @@ const config = {
           src: 'img/20240324_logo_b_trimmed-removebg-preview.svg',
         },
         items: [
-          {to: '/blog', label: 'Blog', position: 'left'},
+          // {to: '/blog', label: 'Blog', position: 'left'},
           // Add later when I have projects.
           // {to: '/projects', label: 'Projects', position: 'left'},
           {to: '/research', label: 'Research', position: 'left'}
